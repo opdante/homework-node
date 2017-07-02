@@ -37,7 +37,7 @@ test('download', function (t) {
   }
 
   function verifyLodash (callback) {
-    const _ = require('./packages/lodash')
+    const _ = require('lodash')
     t.equal(typeof _.map, 'function', '_.map exists')
     callback()
   }

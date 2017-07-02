@@ -2,7 +2,9 @@
   "scripts": {
     "test": "node test.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
   "devDependencies": {
     "get-folder-size": "~1.0.0",
     "tape": "~4.6.0",

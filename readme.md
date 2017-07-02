@@ -23,3 +23,14 @@ Passing tests don't guarantee that your solution is perfect but a failing test d
 ## Bonus
 
 How high can you go? Set the `COUNT` environment variable when running your tests to download more than the top 10.
+- We can go as high as 36 because we are scraping the first page of https://www.npmjs.com/browse/depended. This can be improved by recursively scraping with url with the offset changed.
+
+## solution
+I could not find an effective way or an api I could use to give a list of most depended on packages, so I decide tp scrape the data from the url using osmosis. Scrapingseem to work well and
+efficiently although there may be problems in future if the DOM changes.
+
+## dependenies
+Promise
+deferred
+osmosis
+download-npm-package
