@@ -8,7 +8,6 @@ module.exports = downloadPackages
 function downloadPackages (count, callback) {
   try {
     scrapeNpm.scrapeMostDependedOnPackages(pageURL).then(data => {
-        console.log(data.length);
         var packages = data.slice(0, count);
         packageDownload.getPackages(packages, './packages/');
     });
