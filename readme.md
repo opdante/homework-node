@@ -23,10 +23,10 @@ Passing tests don't guarantee that your solution is perfect but a failing test d
 ## Bonus
 
 How high can you go? Set the `COUNT` environment variable when running your tests to download more than the top 10.
-- We can go as high as 1000 because we are reading a least of the top 1000 packages.
+- We can go as high as 1000 because we are reading a list of the top 1000 packages.
 
 ## solution
-This is an alternate solution to scraping the depended webpage (https://www.npmjs.com/browse/depended). It involves reading a text file generated from https://gist.github.com/anvaka/8e8fa57c7ee1350e3491#file-01-most-dependent-upon-md. The markdown file is downloaded and saved as a text file which is read line by line and each package is downloaded. This list seems like it is updated daily so it is fairy accurate. The advantage with this approach is that we can download up to 100 packages however we are completely dependent on someone else's efforts to generate the list.
+This is an alternate solution to scraping the depended webpage (https://www.npmjs.com/browse/depended). It involves reading a text file generated from https://gist.github.com/anvaka/8e8fa57c7ee1350e3491#file-01-most-dependent-upon-md. The markdown file is downloaded and saved as a text file which is read line by line and each package is downloaded. This list seems like it is updated daily so it is fairy accurate. The advantage with this approach is that we can download up to 1000 packages however we are completely dependent on someone else's efforts to generate the list.
 
 Note: This feels like a bit of a cheat because the list is already compiled and the dependencies are already calculated for us to most of the work is done.  
 
