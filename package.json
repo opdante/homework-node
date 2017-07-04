@@ -3,12 +3,16 @@
     "test": "node test.js"
   },
   "dependencies": {
+    "async": "^2.5.0",
     "bluebird": "^3.5.0",
     "callasync": "^1.0.2",
     "deferred": "^0.7.8",
     "download-npm-package": "^3.1.10",
     "get-folder-size": "^1.0.0",
+    "line-reader": "^0.4.0",
     "lodash": "^4.17.4",
+    "markdown-js": "0.0.3",
+    "n-readlines": "^0.2.7",
     "osmosis": "^1.1.4",
     "promise": "^8.0.0",
     "run-series": "^1.1.4",

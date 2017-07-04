@@ -23,11 +23,12 @@ Passing tests don't guarantee that your solution is perfect but a failing test d
 ## Bonus
 
 How high can you go? Set the `COUNT` environment variable when running your tests to download more than the top 10.
-- We can go as high as 36 because we are scraping the first page of https://www.npmjs.com/browse/depended. This can be improved by recursively scraping with url with the offset changed.
+- We can go as high as 1000 because we are reading a least of the top 1000 packages.
 
 ## solution
-I could not find an effective way or an api I could use to give a list of most depended on packages, so I decide tp scrape the data from the url using osmosis. Scrapingseem to work well and
-efficiently although there may be problems in future if the DOM changes.
+This is an alternate solution to scraping the depended webpage (https://www.npmjs.com/browse/depended). It involves reading a text file generated from https://gist.github.com/anvaka/8e8fa57c7ee1350e3491#file-01-most-dependent-upon-md. The markdown file is downloaded and saved as a text file which is read line by line and each package is downloaded. This list seems like it is updated daily so it is fairy accurate. The advantage with this approach is that we can download up to 100 packages however we are completely dependent on someone else's efforts to generate the list.
+
+Note: This feels like a bit of a cheat because the list is already compiled and the dependencies are already calculated for us to most of the work is done.  
 
 ## dependenies
 Promise
