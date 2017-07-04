@@ -31,7 +31,10 @@ This is an alternate solution to scraping the depended webpage (https://www.npmj
 Note: This feels like a bit of a cheat because the list is already compiled and the dependencies are already calculated for us to most of the work is done.  
 
 ## dependenies
-Promise
-deferred
-osmosis
-download-npm-package
+Promise,
+deferred,
+readline,
+https,
+fs,
+gist,
+download-npm-package.
