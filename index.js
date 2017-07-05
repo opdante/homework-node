@@ -1,10 +1,8 @@
 'use strict'
-const packageDownload = require('./lib/DownloadPackages.js');
-const scrapeNpm = require('./lib/ScrapeNpm.js');
-const readGist = require('./lib/ReadGist.js');
-const downloadGist = require('./lib/DownloadGistFile.js')
-
-var path  = './lib/file.txt';
+var packageDownload = require('./lib/DownloadPackages.js'),
+    readGist = require('./lib/ReadGist.js'),
+    downloadGist = require('./lib/DownloadGistFile.js'),
+    path  = './lib/file.txt';
 
 module.exports = downloadPackages
 
